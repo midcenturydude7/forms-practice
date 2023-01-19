@@ -1,0 +1,58 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-content: center;
+  background: #050e1d;
+  color: #ADADAD;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.75em;
+}
+
+.input-container label {
+  padding: 0 0 .5em .25em;
+}
+
+input[type=text],
+input[type=email] {
+  max-width: 600px;
+  min-width: 500px;
+  height: 50px;
+  padding: 0.25em 2em;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  background: #2c2c2c;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.input-styles {
+  margin-bottom: 2em;
+}
+
+.input-styles:last-child {
+  margin-bottom: 0;
+}
+
+@media screen (min-width > 400) and (max-width < 600) {
+  .input-styles {
+    width: 5em;
+  }
+
+}
